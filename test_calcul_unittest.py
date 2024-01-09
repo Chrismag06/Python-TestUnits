@@ -35,6 +35,12 @@ class TestCalcul(unittest.TestCase):
         # Vérifier si le résultat est égal à 4
         self.assertEqual(resultat, 4)
 
+        # Test de division
+    def test_diviser2(self):
+        resultat = self.calc.diviser(8, 2)
+        # Vérifier si le résultat est égal à 4
+        self.assertEqual(resultat, 4)
+
     # Test de division par zéro
     def test_diviser_par_zero(self):
         with self.assertRaises(ZeroDivisionError, msg="Division par zéro impossible"):
